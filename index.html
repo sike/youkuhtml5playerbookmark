@@ -1,74 +1,97 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>YouKu HTML5 Player BookMark</title>
+	<style type="text/css" media="screen">
+		*{margin:0;padding:0;}
+		body{font-family:arial,sans-serif;background:url(http://zythum.free.bg/supercover/w.png);}
+		#header{height:100px;}
+		#btn{
+			text-align:center;
+			font-size:60px;
+			color:#333;
+			display:block;
+			width:800px;
+			height:100px;
+			line-height:100px;
+			margin:0 auto;
+			text-decoration:none;
+			letter-spacing: -3px;
+			box-shadow:1px 1px 5px #333;
+			margin-top:-10px;
+			border-radius:2px;
+			background-image: -webkit-linear-gradient(top,#fff,#ddd);
+			background-image: -moz-linear-gradient(top,#fff,#ddd);
+			background-image: -ms-linear-gradient(top,#fff,#ddd);
+			background-image: -o-linear-gradient(top,#fff,#ddd);
+			background-image: linear-gradient(top,#fff,#ddd);
+		}
+		#btn2{
+			text-align:center;
+			font-size:30px;
+			color:#333;
+			display:block;
+			width:300px;
+			height:60px;
+			line-height:60px;
+			margin:0 auto;
+			text-decoration:none;
+			letter-spacing: -3px;
+			box-shadow:1px 1px 5px #333;
+			border-radius:5px;
+			background-image: -webkit-linear-gradient(top,#fff,#ddd);
+			background-image: -moz-linear-gradient(top,#fff,#ddd);
+			background-image: -ms-linear-gradient(top,#fff,#ddd);
+			background-image: -o-linear-gradient(top,#fff,#ddd);
+			background-image: linear-gradient(top,#fff,#ddd);
+			margin:50px 0;
+			display:inline-block;
+		}
+		#img img{
+			display: block;
+			margin:0 auto;
+			letter-spacing: -3px;
+			box-shadow:1px 1px 5px #333;
+		}
+		#text{
+			width:800px;
+			margin:0 auto;
+			padding:100px 40px;
+			font-size:18px;
+			line-height:150%;
+		}
+		#about{
+			text-align:center;
+			padding:30px;
+			line-height:30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<a id="btn" href="javascript:(function(){var s = document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('src','http://raw.github.com/sike/youkuhtml5playerbookmark/master/youkuhtml5playerbookmark.js');document.head.appendChild(s);})();">YouKu HTML5 Player</a>
+	</div>
+	<div id="text">
+		<p>这个东西用于在YOUKU.com上使用html5的形式播放，而不是flash。</p>
+		<p>在视频播放页点击这个收藏的bookmark便可。</p>
+		<p><span style="font-size:30px;letter-spacing:-3px;">拖拽右面那个东西到收藏栏 =》</span>
+			<a id="btn2" href="javascript:(function(){var s = document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('src','http://raw.github.com/sike/youkuhtml5playerbookmark/master/youkuhtml5playerbookmark.js');document.head.appendChild(s);})();">YouKu HTML5 Player</a></p>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Youkuhtml5playerbookmark : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Youkuhtml5playerbookmark</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/sike/youkuhtml5playerbookmark">View on GitHub</a>
-
-          <h1 id="project_title">Youkuhtml5playerbookmark</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/sike/youkuhtml5playerbookmark/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/sike/youkuhtml5playerbookmark/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Youkuhtml5playerbookmark maintained by <a href="https://github.com/sike">sike</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		<p>今天上班的时候偷偷做的。话说每天看优酷的时候风扇都哗哗的，实在受不了了就做了这个。来解决flash发热大的问题。
+		目前貌似播放只支持safari同学。因为视频格式使用的m3u8，所以貌似chrome没法播放。
+		用chrome的童鞋也不要哭，不要闹。朱一也把mp4的地址也解析出来了。在下来做了个连接。童鞋们点击进去就好了。
+		其实本来像把chrome的地址也判断写ua放进去的。发现优酷不乖得弟子做了3次重定向。天。还是点链接把。</p>
+	</div>
+	<div id="img">
+		<p style="text-align:center;padding-bottom:100px;">----------------下面是实物截图----------------</p>
+		<img src="http://ww3.sinaimg.cn/large/6e9ad2bdgw1dr26z0177aj.jpg" alt="有图有真像" />
+	</div>
+	<div id="about">
+		Code by zythum_朱一 
+		<a href="http://zythum.diandian.com">http://zythum.diandian.com</a>
+		|
+		<a href="http://zyiangel.blogbus.com">http://zyiangel.blogbus.com</a>
+	</div>
+</body>
 </html>
