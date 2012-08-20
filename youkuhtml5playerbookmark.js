@@ -9,36 +9,38 @@
 		'left:0',
 		'bottom:0',
 		'right:0',
-		'background-color:rgba(255,255,255,0)',
+		'background: #000',
+		'opacity: .4',
 		'z-index:999999999999',
-		'-webkit-transition:background-color 0.2s ease;',
-		'-moz-transition:background-color 0.2s ease;',
-		'-o-transition:background-color 0.2s ease;',
-		'transition:background-color 0.2s ease;',
+		'-webkit-transition:background 0.2s ease;',
+		'-moz-transition:background 0.2s ease;',
+		'-o-transition:background 0.2s ease;',
+		'transition:background 0.2s ease;',
 		'pointer-events:none',
 		''
 	];
 	var videoCss = [
 		'',
 		'position:absolute',
-		'width:610px',
-		'height:458px',
+		'width:940px',
+		'height:500px',
 		'top:-500px',
 		'left:50%',
-		'margin-left:-306px',
-		'border:1px solid #999',
+		'margin-top: 120px',
+		'margin-left:-470px',
 		'z-index:1000000000000',
 		'background:#000',
 		'box-shadow:0 0 5px #333',
-		'-webkit-transition:top 1s ease;',
-		'-moz-transition:top 1s ease;',
-		'-o-transition:top 1s ease;',
-		'transition:top 1s ease;',
+		'-webkit-transition:top .6s ease;',
+		'-moz-transition:top .6s ease;',
+		'-o-transition:top .6s ease;',
+		'transition:top .6s ease;',
 		''
 	];
 	var aCss = [
 		'',
 		'position:absolute',
+		'color: #FFF',
 		'bottom:0',
 		'left:0',
 		'right:0',
@@ -70,7 +72,7 @@
 		'position:absolute',
 		'width:500px',
 		'height:40px',
-		'top:470px',
+		'top:630px',
 		'left:50%',
 		'margin-left:-250px',
 		'z-index:1000000000000',
@@ -133,7 +135,7 @@
 		},false);
 		
 		nocover.addEventListener('click',function(){
-			cover.style.backgroundColor = 'rgba(255,255,255,0)';
+			// cover.style.backgroundColor = 'rgba(255,255,255,0)';
 		},false);
 			
 		var changeBtn = document.createElement('div');
@@ -175,7 +177,7 @@
 				
 				v.addEventListener('canplay',v.play);
 				setTimeout(function(){
-					cover.style.backgroundColor = 'rgba(255,255,255,0.6)';
+					// cover.style.backgroundColor = 'rgba(255,255,255,0.6)';
 					v.style.top = '-1px';
 				},100);
 			},
